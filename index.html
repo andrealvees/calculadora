@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calculadora</title>
+</head>
+<body>
+    <div class="fundo">
+    <div class="calculadora">
+        <div class="result-bg">
+            <p class="previous-expression" id="previous-expression"></p>
+            <p class="result" id="result"></p>
+        </div><!--result-bg-->
+        <table class="teclas">
+            <tr>
+                <td><button onclick="limpar()">C</button></td>
+                <td><button id="botao" onclick="apagar()"><</button></td>
+                <td><button id="botao" onclick="tecla('*')">*</button></td>
+                <td><button id="botao" onclick="tecla('/')">/</button></td>
+            </tr>
+
+            <tr>
+                <td><button id="botao" onclick="tecla('7')">7</button></td>
+                <td><button id="botao" onclick="tecla('8')">8</button></td>
+                <td><button id="botao" onclick="tecla('9')">9</button></td>
+                <td><button id="botao" onclick="tecla('+')">+</button></td>
+            </tr>
+
+            <tr>
+                <td><button id="botao" onclick="tecla('4')">4</button></td>
+                <td><button id="botao" onclick="tecla('5')">5</button></td>
+                <td><button id="botao" onclick="tecla('6')">6</button></td>
+                <td><button id="botao" onclick="tecla('-')">-</button></td>
+            </tr>
+
+            <tr>
+                <td><button id="botao" onclick="tecla('1')">1</button></td>
+                <td><button id="botao" onclick="tecla('2')">2</button></td>
+                <td><button id="botao" onclick="tecla('3')">3</button></td>
+                <td rowspan="2"><button id="botao" onclick="resultado()" style="height: 116px;">=</button></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><button id="botao" onclick="tecla('0')" style="width: 116px;">0</button></td>
+                <td><button id="botao" onclick="tecla('.')">.</button></td>
+            </tr>
+        </table>
+    </div><!--calculadora-->
+    </div><!--fundo-->
+
+    <div class="texto">
+        <h2 class="page-title"><em>Olá,</em></h2>
+        <p class="info">Esse é o projeto de uma simples calculadora feita em HTML5, CSS3 e JavaScript afins de estudo e fixação das coisas que aprendi até o momento. Fiz essa calculadora com a ajuda de um video do Gustavo Neitzke, caso queira ver o vídeo, <a href="https://www.youtube.com/watch?v=42TShjXR0m0" target="_blank">clique aqui</a>.</p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
